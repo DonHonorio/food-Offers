@@ -1,0 +1,67 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .imgportada {
+    width: 100%;
+  }
+  
+  .casa {
+    width: 100%;
+    min-height: 250px;
+  }
+  
+  .tarjeta {
+    background-color: darkgray;
+  }
+  
+  .verde {
+    background-color: green;
+    min-height: 50px;
+    border: 1px solid black;
+  }
+  
+  .azul {
+    background-color: blue;
+    min-height: 50px;
+    border: 1px solid black;
+  }
+  
+  .rojo {
+    background-color: red;
+    min-height: 50px;
+  
+    border: 1px solid black;
+  }
+  
+  .rosa {
+    background-color: pink;
+    min-height: 50px;
+    border: 1px solid black;
+  }
+  
+  .marron {
+    background-color: brown;
+    min-height: 50px;
+    border: 1px solid black;
+  }
