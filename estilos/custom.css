@@ -1,67 +1,254 @@
+/*Variables de la página*/
+:root {
+  /* colores de fondo y texto*/
+  --bg-color-principal: #fff;
+  --bg-color-secundario: #b8e1d1;
+  --bg-color-terciario: #ffeda9;
+  --bg-color-cuarto: #ebebeb;
+  --text-color-principal: #4f4f4f;
+  --text-color-secundario: #828282;
+  --text-color-terciario: #525252;
+  --text-color-enlaces: #606C68;
+  --text-color-negro: #1f1f1f;
+  /* fuente letra*/
+  --text-fuente-lato: 'Lato', sans-serif;
+  --text-fuente-playfair: 'Playfair Display', serif;
+}
+/*******************************************************************************************************************/
+/* colores de bloques provisionales (borrar) */
+.verde {
+  background-color: green;
+  min-height: 50px;
+  border: 1px solid black;
+}
+
+.azul {
+  background-color: blue;
+  min-height: 50px;
+  border: 1px solid black;
+}
+
+.rojo {
+  background-color: red;
+  min-height: 50px;
+  border: 1px solid black;
+}
+
+.rosa {
+  background-color: pink;
+  min-height: 50px;
+  border: 1px solid black;
+}
+
+.marron {
+  background-color: brown;
+  min-height: 50px;
+  border: 1px solid black;
+}
+
+.amarillo {
+  background-color: yellow;
+  min-height: 50px;
+  border: 1px solid black;
+}
+
+.negro {
+  background-color: #111;
+  color: #fff;
+  min-height: 50px;
+  border: 1px solid #fff;
+}
+
+.verdeFlor {
+  background-color: #b8e1d1;
+  min-height: 50px;
+  border: 1px solid #fff;
+}
+/*******************************************************************************************************************/
+/* Colores oficiales de bloques y texto de la página*/
+.bg-color-principal {
+  background-color: var(--bg-color-principal);
+}
+
+.bg-color-secundario {
+  background-color: var(--bg-color-secundario);
+}
+
+.bg-color-terciario {
+  background-color: var(--bg-color-terciario);
+}
+
+.text-color-principal {
+  color: var(--text-color-principal);
+}
+
+.text-color-secundario {
+  color: var(--text-color-secundario);
+}
+
+.text-color-terciario {
+  color: var(--text-color-terciario);
+}
+
+/*******************************************************************************************************************/
+/* Edición general de algunos elementos*/
+
+.container-fluid {
+  background-color: var(--bg-color-principal);
+
+  font-family: var(--text-fuente-lato);
+  font-size: 15px;
+}
+
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  color: var(--text-color-enlaces);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} 
+
+li a:hover {
+  /* background-color: #111; */
+  text-decoration: none;
+}
+
+h2 {
+  font-family: var(--text-fuente-playfair);
+  color: var(--text-color-principal);
+}
+h3 {
+  font-family: var(--text-fuente-playfair);
+  color: var(--text-color-principal);
+}
+
+.boton {
+  background-color: var(--bg-color-secundario);
+  color: var(--text-color-principal);
+  font-size: 14px;
+  letter-spacing: 3.5px;
+  padding: 12px;
+
+  border: none;
+}
+
+.hero-principal {
+  background-color: var(--bg-color-secundario);
+  text-align: center;
+  padding: 4em 0;
+}
+
+/*******************************************************************************************************************/
+/* Edición específica */
+
+/* header */
+header .cabecera{
+  padding-top: 20px;
+}
+
+header .cabecera h1 {
+  font-family: var(--text-fuente-playfair);
+  font-size: 25px;
+}
+
+header .cabecera .botones-registro {
+  /* background-color: red; */
+  font-size: 10px;
+}
+
+.botones-registro a {
+  padding: 0;
+}
+
+
+
+/* ofertas destacadas */
+
+.ofertas_destacadas {
+  margin-bottom: 10%;
+}
+
+
+/* aside */
+
+aside .suscribirse input[type="email"] {
+  width: 200px;
+  height: 45px;
   
-  li {
-    float: left;
-  }
+  background-color: var(--bg-color-cuarto);
+  border: none;
+}
+
+aside .suscribirse input[type="email"]::placeholder {
+  text-align: center;
+  color: var(--text-color-principal);
+
+  font-size: 0.75em;
+}
+
+
+@media screen and (min-width: 430px) {
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-  
-  .imgportada {
-    width: 100%;
-  }
-  
-  .casa {
-    width: 100%;
-    min-height: 250px;
-  }
-  
-  .tarjeta {
-    background-color: darkgray;
-  }
-  
-  .verde {
-    background-color: green;
-    min-height: 50px;
-    border: 1px solid black;
-  }
-  
-  .azul {
-    background-color: blue;
-    min-height: 50px;
-    border: 1px solid black;
-  }
-  
-  .rojo {
+  /* Edición específica (430px)*/
+
+  header .cabecera .botones-registro {
     background-color: red;
-    min-height: 50px;
-  
-    border: 1px solid black;
+    font-size: 12px;
   }
-  
-  .rosa {
-    background-color: pink;
-    min-height: 50px;
-    border: 1px solid black;
+
+  .botones-registro a {
+    padding: 14px 10px;
   }
-  
-  .marron {
-    background-color: brown;
-    min-height: 50px;
-    border: 1px solid black;
+
+  /* aside */
+
+  aside .suscribirse input[type="email"] {
+    width: 300px;
   }
+
+  aside .suscribirse input[type="email"]::placeholder {
+    font-size: 1em;
+  }
+
+}
+@media screen and (min-width: 576px) {
+  /* Edición general de algunos elementos*/
+  .hero-principal {
+    padding: 5.5em 0;
+  }
+
+  /***********************************************/
+  /* Edición específica (430px)*/
+  header .cabecera .botones-registro {
+    background-color: blue;
+    font-size: 12px;
+  }
+}
+/* @media screen and (min-width: 768px) {
+  
+  /* Edición específica (430px)*//*
+  header .cabecera .botones-registro {
+    background-color: purple;
+    font-size: 12px;
+  }
+} */
+@media screen and (min-width: 992px) {
+  /* Edición general de algunos elementos*/
+  .hero-principal {
+    padding: 9em 0;
+  }
+
+  /***********************************************/
+  /* Edición específica (430px)*/
+  header .cabecera .botones-registro {
+    background-color: yellow;
+    font-size: 12px;
+  }
+}
