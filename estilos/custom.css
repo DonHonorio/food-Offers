@@ -132,6 +132,12 @@ header a:hover {
   margin-bottom: 10%;
 }
 
+/* productos similares */
+
+.productos_similares {
+  margin-bottom: 5%;
+}
+
 /* colaboraciones */
 
 .colaboraciones .marcas img {
