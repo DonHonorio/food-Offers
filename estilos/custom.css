@@ -132,6 +132,18 @@ header a:hover {
   margin-bottom: 10%;
 }
 
+/* video */
+
+.video {
+  margin: 5em 0;
+}
+
+.video iframe{
+  /* max-width: 250px; */
+  width: 250px;
+  height: 100%;
+}
+
 /* productos similares */
 
 .productos_similares {
@@ -301,6 +313,52 @@ footer .linea {
   margin: 6em 0;
 }
 
+/* PÁGINA PRODUCTOS */
+
+/* analisis */
+
+.analisis {
+  margin: 1em !important;
+  margin-top: 2em !important;
+}
+
+.analisis .descripcion {
+  margin: 2em 0;
+}
+
+.analisis .barra-lateral h4.nombre {
+  font-family: var(--text-fuente-playfair);
+}
+.analisis .barra-lateral h4 {
+  margin: 1em 0;
+}
+
+.analisis .precio {
+  margin: 2em 0;
+}
+.analisis .precio  {
+  margin: 2em 0;
+}
+  
+.analisis .precio .elemento-precio {
+  margin: 1em 0;
+}
+
+.analisis .precio input {
+  max-width: 120px;
+}
+
+.analisis .precio button {
+  background-color: var(--text-color-principal);
+  color: var(--bg-color-principal);
+}
+
+/* PÁGINA MAPA */
+
+.mapa {
+  margin: 2em 1em !important;
+}
+
 
 /*******************************************************************************************************************/
 @media screen and (min-width: 430px) {
@@ -357,6 +415,19 @@ footer .linea {
     padding: 2em 3em;
   }
 
+  /* video */
+  
+  .video iframe{
+    width: 500px;
+    height: 283px;
+  }
+
+  /* novedades */
+  
+  .novedades img {
+    max-width: 150px;
+  }
+
   /* opiniones */
 
   .opiniones img {
@@ -367,12 +438,6 @@ footer .linea {
 
   .marcas div {
     padding: 40px;
-  }
-
-  /* novedades */
-  
-  .novedades img {
-    max-width: 150px;
   }
   
   /* aside */
@@ -407,6 +472,26 @@ footer .linea {
   .formulario {
     padding: 10% 20%;
   }
+  
+  /* PÁGINA PRODUCTOS */
+  
+  /* analisis */
+
+  .analisis {
+    margin: 4em !important;
+    margin-top: 5em !important;
+  }
+  
+  .analisis .precio .elemento-precio {
+    margin: 3em 0;
+  }
+
+  /* PÁGINA MAPA */
+  
+  .mapa {
+    margin: 8em 5% !important;
+  }
+  
 
 }
 
@@ -454,6 +539,13 @@ footer .linea {
   
   .presentacion p {
     padding: 5em 38vw;
+  }
+
+  /* video */
+  
+  .video iframe{
+    width: 980px;
+    height: 553px;
   }
 
   /* opiniones */
@@ -565,15 +657,52 @@ footer .linea {
   .horario p strong {
     font-size: 1.5em !important;
   }
+  
+  /* PÁGINA PRODUCTOS */
+  
+  /* analisis */
+
+  .analisis {
+    margin: 5em !important;
+    margin-top: 8em !important;
+  }
+  .analisis .barra-lateral p {
+    font-size: 0.8em !important;
+  }
+  
+  .analisis .precio .elemento-precio {
+    font-size: 0.7em;
+  }
+
+  /* PÁGINA MAPA */
+  
+  .mapa {
+    margin: 10em 10% !important;
+  }
+  
 
 }
 
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 1600px) {
+
   
-  /* Edición específica (430px)*//*
-  header .cabecera .botones-registro {
-    background-color: purple;
-    font-size: 12px;
+  /* PÁGINA PRODUCTOS */
+  
+  /* analisis */
+
+  .analisis {
+    margin: 15em !important;
   }
-} */
+
+  .analisis .barra-lateral p {
+    /* padding: 1em 2em; */
+    font-size: 1em !important;
+  }
+
+  /* PÁGINA MAPA */
+  
+  .mapa {
+    margin: 10em 25% !important;
+  }
+}
